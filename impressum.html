@@ -7,22 +7,29 @@
   <title>Impressum | SpaceStays</title>
   <meta name="description" content="Impressum von SpaceStays – Alexander Kupriychuk und Maximilian Weyer Kurzzeitvermietung GbR">
   <style>
-    :root{color-scheme:light;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+    :root{color-scheme:light;--bg:#f8f7f5;--ink:#111110;--muted:#64645f;--line:#dedcd6;--accent:#2d4a2d;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif}
     *{box-sizing:border-box}
-    body{margin:0;background:#f8fafc;color:#172334;line-height:1.65}
-    header{background:#10283b;color:white;padding:20px max(24px,calc((100vw - 800px)/2))}
-    header a{color:white;text-decoration:none;font-size:22px;font-weight:700}
-    main{max-width:800px;margin:48px auto;padding:0 24px 60px}
-    h1{font-size:clamp(30px,5vw,42px);line-height:1.15;margin:0 0 32px}
-    h2{font-size:20px;margin:32px 0 8px}
+    body{margin:0;background:var(--bg);color:var(--ink);line-height:1.7}
+    header{background:#111110;color:white;padding:20px max(24px,calc((100vw - 820px)/2))}
+    header a{color:white;text-decoration:none;font-family:Georgia,"Times New Roman",serif;font-size:23px}
+    main{max-width:820px;margin:48px auto;padding:0 24px 72px;background:#fff;border:1px solid var(--line);border-radius:4px}
+    .inner{padding:44px clamp(0px,4vw,36px)}
+    h1{font-family:Georgia,"Times New Roman",serif;font-size:clamp(34px,6vw,48px);font-weight:400;line-height:1.15;margin:0 0 36px}
+    h2{font-size:19px;margin:34px 0 8px}
+    h3{font-size:16px;margin:24px 0 6px}
+    p,li{color:var(--muted)}
     p{margin:8px 0 16px}
-    a{color:#075a94}
-    footer{border-top:1px solid #dbe3ea;padding:24px;text-align:center;color:#526579}
-  </style>
+    ul{padding-left:22px}
+    a{color:var(--accent)}
+    .back{display:inline-block;margin-top:36px}
+    footer{border-top:1px solid var(--line);padding:26px 24px;text-align:center;color:var(--muted);font-size:13px}
+    footer a{margin:0 9px}
+    @media(max-width:600px){main{margin:0;border-left:0;border-right:0}.inner{padding-top:36px}}
+</style>
 </head>
 <body>
   <header><a href="/">SpaceStays</a></header>
-  <main>
+  <main><div class="inner">
     <h1>Impressum</h1>
     <h2>Angaben gemäß § 5 DDG</h2>
     <p><strong>Alexander Kupriychuk und Maximilian Weyer Kurzzeitvermietung GbR</strong><br>
@@ -30,16 +37,23 @@
     Mülheimer Straße 4<br>
     40239 Düsseldorf<br>
     Deutschland</p>
+
     <h2>Vertretungsberechtigte Gesellschafter</h2>
     <p>Alexander Kupriychuk und Maximilian Weyer</p>
+
     <h2>Kontakt</h2>
-    <p>E-Mail: <a href="mailto:info@spacestays.de">info@spacestays.de</a></p>
+    <p>Telefon: <a href="tel:+4917620930543">+49 176 20930543</a><br>
+    E-Mail: <a href="mailto:info@spacestays.de">info@spacestays.de</a></p>
+
     <h2>Umsatzsteuer-Identifikationsnummer</h2>
     <p>Umsatzsteuer-Identifikationsnummer gemäß § 27a UStG:<br>
     DE363615266</p>
+
     <h2>Verbraucherstreitbeilegung</h2>
     <p>Wir sind weder bereit noch verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
-  </main>
-  <footer>© SpaceStays</footer>
+
+    <a class="back" href="/">Zurück zur Startseite</a>
+  </div></main>
+  <footer><a href="/impressum.html">Impressum</a><a href="/datenschutz.html">Datenschutz</a><br>© 2026 SpaceStays</footer>
 </body>
 </html>
